@@ -9,6 +9,10 @@
   --foreground: #dddddd;
   --root-bg: #111217;
   --jade-line: rgba(204, 204, 220, 0.305);
+  --jade-collapse-title: #cccccc;
+  --jade-border-color: rgba(204, 204, 220, 0.12);
+  --jade-card-border: rgba(204, 204, 220, 0.12);
+  --jade-card-background: rgb(24, 27, 31);
 }
 
 body {

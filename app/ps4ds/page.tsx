@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <>
       <div className='jade-card'>
-        <p>main content</p>
+        <p>practical statistics for data science</p>
       </div>
     </>
   );
