@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: dark --default, light, sunset, dim;
+}
+
+:root {
+  --background: #111217;
+  --foreground: #dddddd;
+  --root-bg: #111217;
+  --jade-line: rgba(204, 204, 220, 0.305);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, Inter, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
