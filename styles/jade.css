@@ -1,6 +1,6 @@
 .jade-header-h1 {
     display: inline-block;
-    margin: 0 20px 0 15px;
+    margin: 0 20px 0 20px;
     padding: 0 23px 0 0;
     font-size: 20px;
     font-weight: 500;
@@ -21,8 +21,9 @@
 }
 
 .main-nav {
-    margin: 20px;
-    width: 120px;
+    margin: 2px;
+    padding: 0px;
+    width: 250px;
 }
 
 .main-content {
@@ -43,11 +44,17 @@
 
 .jade-collapse-title {
     margin: 1px;
+    padding: 4px;
     color: var(--jade-collapse-title);
+    background: var(--background);
+    /* border: 1px solid var(--jade-card-border); */
 }
 
 .jade-collapse-title-2 {
     margin: 1px;
+    padding: 4px;
+    color: var(--jade-collapse-title);
+    background: var(--background);
 }
 
 .collapse>input[type="checkbox"] {
@@ -70,4 +77,181 @@
     padding: 10px;
     background: var(--jade-card-background);
     border-radius: 3px;
+}
+
+.fesk-card {
+    border: 1px solid var(--fesk-card-border);
+    padding: 10px;
+    background: var(--fesk-card-background);
+    border-radius: 3px;
+}
+
+strong {
+    color: var(--color-zinc-300);
+}
+
+.aw-box {
+    border: 1px solid var(--fesk-card-border);
+}
+
+.aw-main-content {
+    margin: 15px;
+    border: 1px solid var(--fesk-card-border);
+    padding: 10px;
+    background: var(--fesk-card-background);
+    border-radius: 3px;
+    /* width: 95%; */
+}
+
+.aw-role-turn {
+    margin: 10x;
+}
+
+.aw-main-h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.aw-main-h3 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.aw-item-row {
+    margin-top: 3px;
+}
+
+.aw-tree-node {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+.aw-margin-top {
+    margin-top: 20px;
+}
+
+.aw-margin-top-15 {
+    margin-top: 15px;
+}
+
+.aw-margin-left-15 {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.aw-margin-right {
+    margin-right: 10px;
+}
+
+.aw-margin-right-5 {
+    margin-right: 5px;
+}
+
+.aw-margin-bottom {
+    margin-bottom: 10px;
+}
+
+.aw-margin-bottom-2 {
+    margin-bottom: 2px;
+}
+
+.aw-execute-sequence {
+    margin-bottom: 5px;
+    margin-top: 3px;
+    padding-top: 1px;
+    padding-left: 3px;
+}
+
+.aw-collapse-title {
+    margin: 0px;
+
+    color: var(--fesk-collapse-title);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    /* background-color: var(--color-zinc-800); */
+}
+
+.aw-collapse-content {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-mono);
+    color: var(--color-zinc-400);
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    /* border: 1px solid var(--fesk-card-border);
+    border-radius: 0px;
+    background-color: var(--background); */
+
+}
+
+.aw-collapse-checkbox {
+    padding: 0px;
+}
+
+.aw-drawer-title {
+    line-height: 18px;
+    margin-bottom: 5px;
+
+    /* background-color: var(--color-zinc-800); */
+    /* padding-bottom: 1px;
+    padding-left: 3px; */
+}
+
+.aw-drawer-title-2 {
+    margin: 2px;
+    padding: 3px;
+    border: 1px solid var(--fesk-card-border);
+    border-radius: 5px;
+    background: var(--fesk-card-background);
+
+    /* background-color: var(--color-zinc-800); */
+    /* padding-bottom: 1px;
+    padding-left: 3px; */
+}
+
+.aw-property {
+    padding: 2px;
+    margin-left: 15px;
+}
+
+.aw-overflow-wrap {
+    overflow-wrap: break-word;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.aw-tree-item-mt {
+    margin-top: 5px;
+}
+
+.aw-roleturn-role {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-zinc-200);
+    padding: 4px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.aw-roleturn-body {
+    /* border: 1px solid var(--fesk-card-border); */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    background: var(--fesk-card-2-background);
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    max-height: 200px;
 }

@@ -13,6 +13,16 @@
   --jade-border-color: rgba(204, 204, 220, 0.12);
   --jade-card-border: rgba(204, 204, 220, 0.12);
   --jade-card-background: rgb(24, 27, 31);
+
+  --fesk-card-border: rgba(204, 204, 220, 0.12);
+  --fesk-card-2-border: #4e5d66;
+  --fesk-card-background: rgb(24, 27, 31);
+  --fesk-card-2-background: #11121787;
+  --fesk-line: rgba(204, 204, 220, 0.305);
+  --fesk-card-background-2: #111217;
+  --fesk-collapse-title: #cccccc;
+  --fesk-collapse-title-background: #22282c;
+  --fesk-dialog-background: rgb(45, 48, 53);
 }
 
 body {

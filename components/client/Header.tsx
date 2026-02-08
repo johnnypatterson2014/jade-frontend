@@ -4,10 +4,10 @@ export default function Header() {
 
     return (
         <>
-            <div className="jade-border">
+            <div className="">
 
 
-                <div className="flex mt-[10px] mb-[10px] w-full">
+                <div className="flex mt-[15px] mb-[10px] w-full">
                     <div className='flex-1'>
                         <h1 className="jade-header-h1">
                             launchpad

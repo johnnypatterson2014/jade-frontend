@@ -6,12 +6,12 @@ export default function FeskDrawer({ title, children }: { title: string, childre
 
     return (
         <>
-            <div className="collapse mb-[10px]">
+            <div className="collapse mb-[1px]">
                 <input id='collapse-checkbox' type="checkbox" />
                 <div className="collapse-title">
 
                     <div className="jade-collapse-title">
-                        <div className="p-[0px] m-[0px]">
+                        <div className="pt-[2px] pb-[2px] pl-[4px] pr-[4px] m-[0px]">
                             {title}
                         </div>
 
