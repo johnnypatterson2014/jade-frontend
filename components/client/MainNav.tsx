@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import Drawer2 from '@/components/client/Drawer2';
+import NavDrawer from '@/components/client/NavDrawer';
+import NavDrawerItem from '@/components/client/NavDrawerItem';
 
 export default function MainNav() {
 
@@ -9,51 +10,29 @@ export default function MainNav() {
         <>
             <div className='main-nav'>
 
-                <Drawer2 name='documentation'>
+                <NavDrawer name='documentation'>
 
-                    <div className='grid grid-cols-1 jade-nav'>
-                        <Link className='jade-nav-link' href={'/python4j'}>
-                            <div className='ml-[5px]'>
-                                python4j
-                            </div>
-                        </Link>
-                    </div>
+                    <NavDrawerItem href='/python4j' isFirst={true} >
+                        python4j
+                    </NavDrawerItem>
 
-                    <div className='grid grid-cols-1 jade-nav jade-nav-border-top'>
-                        <Link className='jade-nav-link' href={'/python4j'}>
-                            <div className='ml-[5px]'>
-                                python4j
-                            </div>
-                        </Link>
-                    </div>
+                    <NavDrawerItem href='/ps4ds' isFirst={false} >
+                        ps4ds
+                    </NavDrawerItem>
 
-                </Drawer2>
+                </NavDrawer>
 
-                <Drawer2 name='phase 1'>
+                <NavDrawer name='phase 1'>
 
-                    <div className='grid grid-cols-1 jade-nav'>
-                        <div>
-                            <Link className='jade-nav-link' href={'/python4j'}>
-                                <div className='ml-[5px]'>
-                                    python for java devs
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
+                    <NavDrawerItem href='/python4j' isFirst={true} >
+                        python for java devs
+                    </NavDrawerItem>
 
-                    <div className='grid grid-cols-1 jade-nav jade-nav-border-top'>
-                        <div>
-                            <Link className='jade-nav-link' href={'/ps4ds'}>
-                                <div className='ml-[5px]'>
-                                    practical statistics for data science
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
+                    <NavDrawerItem href='/ps4ds' isFirst={false} >
+                        practical statistics for data science
+                    </NavDrawerItem>
 
-                </Drawer2>
-
-
+                </NavDrawer>
 
             </div>
         </>

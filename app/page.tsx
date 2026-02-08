@@ -2,9 +2,7 @@
 export default function Home() {
   return (
     <>
-      <div className='jade-card'>
-        <p>main content</p>
-      </div>
+      <p>main content</p>
     </>
   );
 }

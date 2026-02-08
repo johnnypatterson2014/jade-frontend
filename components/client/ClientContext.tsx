@@ -1,7 +1,6 @@
 'use client';
 
 import { ReactNode, createContext, useContext, useEffect, useState } from 'react'
-import { getTestResponse } from '@/components/server/fastApiProxy'
 
 interface ContextProps {
   isLoadingAnswer: boolean
@@ -10,6 +9,23 @@ interface ContextProps {
 }
 
 const ClientContextProps = createContext<Partial<ContextProps>>({})
+
+const getTestResponse = async () => {
+  try {
+    // example GET
+    const response = await fetch('/api/test', {
+      method: 'GET'
+    })
+
+    const responseData = await response.json();
+    // console.log('reponse in sendChatRequest: ' + JSON.stringify(responseData));
+
+    return responseData;
+  } catch (error) {
+    console.log('error in getTestResponse.');
+    console.log(error)
+  }
+}
 
 export function ClientContext({ children }
   : { children: ReactNode }) {

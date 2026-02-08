@@ -27,7 +27,7 @@
 }
 
 .main-content {
-    margin: 20px;
+    margin: 5px;
 }
 
 .collapse {
@@ -74,14 +74,14 @@
 
 .jade-card {
     border: 1px solid var(--jade-card-border);
-    padding: 10px;
+    padding: 0px;
     background: var(--jade-card-background);
     border-radius: 3px;
 }
 
 .fesk-card {
     border: 1px solid var(--fesk-card-border);
-    padding: 10px;
+    padding: 0px;
     background: var(--fesk-card-background);
     border-radius: 3px;
 }

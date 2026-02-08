@@ -19,15 +19,17 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
           <div className='flex-none ml-[20px]'>
             <div className="grid grid-cols-1 gap-[10px]">
+
               <MainNav />
+
             </div>
           </div>
 
           <div className='grow fesk-card ml-[15px] mr-[20px]'>
-            <div className="m-[10px]">
-              <div className="main-content">
-                {children}
-              </div>
+            <div className="main-content">
+
+              {children}
+
             </div>
           </div>
 

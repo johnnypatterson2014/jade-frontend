@@ -1,23 +1,22 @@
+'use server';
 
+import { NextResponse, NextRequest } from 'next/server';
 
 export const getTestResponse = async () => {
+
+  const url = 'http://127.0.0.1:8000';
+
   try {
-
-    // console.log('content: ' + content)
-    // console.log('role: ' + chatMessage.role)
-    // console.log('previousResponseId: ' + chatMessage.previousResponseId)
-
-    // example GET
-    const response = await fetch('/api/test', {
-      method: 'GET'
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      },
     })
-
-    const responseData = await response.json();
-    // console.log('reponse in sendChatRequest: ' + JSON.stringify(responseData));
-
-    return responseData;
+    const data = await response.json()
+    // res.status(200).json({ data })
+    return NextResponse.json(data);
   } catch (error) {
-    console.log('error in getTestResponse.');
-    console.log(error)
+    // TODO - log error
   }
 }
