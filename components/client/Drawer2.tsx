@@ -36,20 +36,10 @@ export default function Drawer2({ name, children }: { name: string, children: Re
 
                     </div>
                 </div>
-                <div className="collapse-content">
-                    <div className="p-[0px] m-[0px]">
+                <div className="collapse-content ml-[15px] mr-[5px]">
 
-                        <div className="aw-collapse-content">
-                            <div className="p-[0px] mb-[15px]">
-                                <div className='aw-roleturn-body'>
-                                    {children}
-                                </div>
+                    {children}
 
-                            </div>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
 

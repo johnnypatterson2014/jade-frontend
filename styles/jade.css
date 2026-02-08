@@ -197,8 +197,9 @@ strong {
 }
 
 .aw-drawer-title {
-    line-height: 18px;
-    margin-bottom: 5px;
+    line-height: 16px;
+    margin-bottom: 6px;
+    padding-left: 5px;
 
     /* background-color: var(--color-zinc-800); */
     /* padding-bottom: 1px;
@@ -254,4 +255,30 @@ strong {
     margin-top: 2px;
     margin-bottom: 2px;
     max-height: 200px;
+}
+
+.jade-nav {
+    /* background: var(--fesk-dialog-background); */
+    padding: 4px;
+    margin: 0px;
+    font-family: var(--font-mono);
+    color: var(--color-zinc-400);
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    transition: background-color 0.1s ease;
+}
+
+.jade-nav-border-top {
+    border-top: 1px solid var(--fesk-card-border);
+}
+
+.jade-nav:hover {
+    background-color: var(--fesk-dialog-background);
+    color: var(--color-zinc-200);
+}
+
+.jade-nav-link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
 }

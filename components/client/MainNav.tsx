@@ -9,17 +9,48 @@ export default function MainNav() {
         <>
             <div className='main-nav'>
 
-                <Drawer2 name='jade'>
-                    <ul className="">
-                        <li><Link href={'/jade/notes'}>notes</Link></li>
-                    </ul>
+                <Drawer2 name='documentation'>
+
+                    <div className='grid grid-cols-1 jade-nav'>
+                        <Link className='jade-nav-link' href={'/python4j'}>
+                            <div className='ml-[5px]'>
+                                python4j
+                            </div>
+                        </Link>
+                    </div>
+
+                    <div className='grid grid-cols-1 jade-nav jade-nav-border-top'>
+                        <Link className='jade-nav-link' href={'/python4j'}>
+                            <div className='ml-[5px]'>
+                                python4j
+                            </div>
+                        </Link>
+                    </div>
+
                 </Drawer2>
 
                 <Drawer2 name='phase 1'>
-                    <ul className="">
-                        <li><Link href={'/python4j'}>python for java devs</Link></li>
-                        <li><Link href={'/ps4ds'}>practical statistics for data science</Link></li>
-                    </ul>
+
+                    <div className='grid grid-cols-1 jade-nav'>
+                        <div>
+                            <Link className='jade-nav-link' href={'/python4j'}>
+                                <div className='ml-[5px]'>
+                                    python for java devs
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className='grid grid-cols-1 jade-nav jade-nav-border-top'>
+                        <div>
+                            <Link className='jade-nav-link' href={'/ps4ds'}>
+                                <div className='ml-[5px]'>
+                                    practical statistics for data science
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+
                 </Drawer2>
 
 
