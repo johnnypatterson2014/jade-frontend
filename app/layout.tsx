@@ -3,6 +3,8 @@ import "./globals.css";
 import "@/styles/jade.css";
 import Header from '@/components/client/Header';
 import MainNav from '@/components/client/MainNav';
+import { ClientContext } from '@/components/client/ClientContext'
+import { MathJaxContext } from "better-react-mathjax";
 
 export const metadata: Metadata = {
   title: "Launchpad JADE",
@@ -10,9 +12,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
+
   return (
     <html lang="en">
+
       <body>
+
         <Header />
 
         <div className="flex flex-row items-start mt-[15px] mb-[15px] w-full">
@@ -27,9 +32,15 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
           <div className='grow fesk-card ml-[15px] mr-[20px]'>
             <div className="main-content">
+              <MathJaxContext>
 
-              {children}
+                <ClientContext>
 
+                  {children}
+
+                </ClientContext>
+
+              </MathJaxContext>
             </div>
           </div>
 

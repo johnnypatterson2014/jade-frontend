@@ -206,6 +206,21 @@ strong {
     padding-left: 3px; */
 }
 
+.aw-drawer-title2 {
+    margin-bottom: 6px;
+    margin-top: 6px;
+    padding-left: 5px;
+
+    font-family: var(--font-mono);
+    color: var(--color-zinc-200);
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+
+    /* background-color: var(--color-zinc-800); */
+    /* padding-bottom: 1px;
+    padding-left: 3px; */
+}
+
 .aw-drawer-title-2 {
     margin: 2px;
     padding: 3px;
@@ -281,4 +296,223 @@ strong {
     display: block;
     text-decoration: none;
     cursor: pointer;
+}
+
+.jade-h1 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: var(--color-zinc-300);
+}
+
+.jade-h2-2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: var(--color-blue-300);
+}
+
+.jade-h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--color-blue-300);
+}
+
+.jade-h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: var(--color-blue-300);
+}
+
+.jade-h3-orange {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--color-orange-300);
+}
+
+.jade-text {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    margin-bottom: 10px;
+    color: var(--color-zinc-400);
+    font-family: var(--font-mono);
+}
+
+.jade-text-link {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    margin-bottom: 10px;
+    color: var(--color-blue-300);
+    font-family: var(--font-mono);
+}
+
+.jade-text-link:hover {
+    text-decoration: underline;
+}
+
+.jade-border-body {
+    border: 1px solid var(--fesk-card-border);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    background: var(--fesk-card-2-background);
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.jade-border2 {
+    border: 1px solid var(--fesk-card-border);
+    border-radius: 5px;
+}
+
+.jade-border3 {
+    border: 1px solid var(--color-zinc-600);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.jade-border-body-text {
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    font-family: var(--font-mono);
+    color: var(--color-zinc-400);
+}
+
+.jade-code {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    color: var(--color-zinc-400);
+    font-family: var(--font-mono);
+    border: 1px solid var(--fesk-card-border);
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(8, 8, 8, 0.175);
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.jade-code-1 {
+    color: rgb(204, 204, 204);
+    background-color: rgba(55, 55, 55, 0.37);
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 19px;
+    white-space: pre-wrap
+}
+
+.jade-code-2 {
+    color: rgb(197, 134, 192)
+}
+
+.derivatives-summary {
+    background: var(--color-white);
+    color: var(--color-zinc-700);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    max-width: 900px;
+}
+
+.calc-summary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calc-summary h1 {
+    font-family: 'Segoe UI Light';
+    font-size: 32px;
+    color: var(--color-blue-500);
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.calc-summary h2 {
+    font-family: 'Segoe UI Semibold';
+    font-size: 16px;
+    color: var(--color-zinc-900);
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.calc-summary h4 {
+    font-family: 'Segoe UI Semibold';
+    color: var(--color-orange-500);
+    display: inline;
+}
+
+.calc-summary p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.calc-summary ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.calc-summary strong {
+    font-family: 'Segoe UI Semibold';
+    color: var(--color-orange-500);
+}
+
+.math {
+    font-family: 'Segoe UI Semibold';
+    color: var(--color-orange-300);
+}
+
+.formula {
+    font-family: 'Segoe UI Semibold';
+    color: var(--color-orange-300);
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+    display: inline !important;
+}
+
+.page-notes p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.page-notes h1 {
+    font-family: 'Segoe UI Light';
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: var(--color-blue-300);
+}
+
+.page-notes h2 {
+    font-family: 'Segoe UI Semibold';
+    font-size: 16px;
+    color: var(--color-blue-300);
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.page-notes strong {
+    font-family: 'Segoe UI Semibold';
+    color: var(--color-orange-300);
+}
+
+.page-notes ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-bottom: 15px;
 }

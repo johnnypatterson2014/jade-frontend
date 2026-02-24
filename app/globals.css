@@ -33,6 +33,108 @@ body {
 }
 
 p {
-  margin-bottom: 20px;
-  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Optional wrapper styling (applies to the <section> in the HTML) */
+section {
+  max-width: 850px;
+  margin: 24px auto;
+  padding: 20px 22px;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2937;
+  /* slate-ish */
+}
+
+/* Headings */
+section h2 {
+  font-size: 1.8rem;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+  letter-spacing: -0.02em;
+}
+
+section h3 {
+  font-size: 1.2rem;
+  margin: 20px 0 8px;
+  letter-spacing: -0.01em;
+}
+
+/* Paragraphs and lists */
+section p {
+  margin: 10px 0;
+}
+
+section ul {
+  margin: 8px 0 12px 20px;
+  padding: 0;
+}
+
+section li {
+  margin: 4px 0;
+}
+
+/* Emphasis */
+section strong {
+  font-weight: 650;
+}
+
+section em {
+  font-style: italic;
+}
+
+/* Code blocks */
+section pre {
+  background: #e8e9ee;
+  /* deep navy */
+  color: #151516;
+  /* light text */
+  padding: 12px 14px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 10px 0 14px;
+  border: 1px solid #1f2a44;
+}
+
+section code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95rem;
+  white-space: pre;
+}
+
+/* Inline matrix line (the bracketed matrix inside a <p>) */
+section p span[style*="Times New Roman"] {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+}
+
+/* Subtle spacing for the “Important:” list */
+section p strong+ul {
+  margin-top: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  section {
+    padding: 16px 14px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section h3 {
+    font-size: 1.1rem;
+  }
+
+  section code {
+    font-size: 0.9rem;
+  }
 }

@@ -1,0 +1,67 @@
+<input type="radio" name="my_tabs_1" className="tab" aria-label="transcript summary" defaultChecked />
+<div className="tab-content bg-base-100 border-base-300 p-6">
+
+  <div className='flex mt-[0px] gap-[15px]'>
+    <div className='flex-1 min-w-[600px] max-w-[1000px] mr-[20px]'>
+
+      <div className="derivatives-summary">
+
+        <div className="calc-summary">
+
+          <h1>Properties of the Derivative</h1>
+
+
+          <p>To differentiate more complicated functions, we use four fundamental rules: </p>
+          <p><strong>scalar multiplication rule, sum rule, product rule, and chain rule.</strong></p>
+
+          <h2 id="1-scalar-multiplication-rule">1. Scalar Multiplication Rule</h2>
+          <p>If a function is multiplied by a constant:</p>
+          <p>{"\\[f(x) = c \\cdot g(x)\\]"}</p>
+          <p>then its derivative is:</p>
+          <p>{"\\[f′(x) = c \\cdot g′(x)\\]"}</p>
+          <strong>Why this works:</strong>
+          <p>Multiplying a function by a constant stretches it vertically. This multiplies every rise (vertical change)
+            by c while the run (horizontal change) remains the same. Since slope = rise/run, all slopes — and therefore
+            the derivative — are multiplied by c.</p>
+
+          <h2 id="2-sum-rule">2. Sum Rule</h2>
+          <p>If a function is the sum of two functions:</p>
+          <p>{"\\[f(x) = g(x) + h(x)\\]"}</p>
+          <p>then</p>
+          <p>{"\\[f′(x) = g′(x) + h′(x)\\]"}</p>
+          <strong>Why this works:</strong>
+          <p>Just as distances or velocities add, rates of change also add. If two quantities change over time and are
+            added together, their total rate of change is the sum of their individual rates.</p>
+
+          <h2 id="3-product-rule">3. Product Rule</h2>
+          <p>If a function is the product of two functions:</p>
+          <p>{"\\[f(x) = g(x) \\cdot h(x)\\]"}</p>
+          <p>then</p>
+          <p>{"\\[f′(x) = g′(x)h(x) + g(x)h′(x)\\]"}</p>
+          <strong>Why this works:</strong>
+          <p>When both factors change, the total change comes from:</p>
+          <ul>
+            <li>The first changing while the second stays fixed</li>
+            <li>The second changing while the first stays fixed</li>
+          </ul>
+
+          <h2 id="4-chain-rule">4. Chain Rule</h2>
+          <p>If a function is a composition:</p>
+          <p>{"\\[y = g(h(t))\\]"}</p>
+          <p>then</p>
+          <p>{"\\[\\frac{dy}{dt} = \\frac{dg}{dh} \\cdot \\frac{dh}{dt}\\]"}</p>
+          <p>In standard notation:</p>
+          <p>{"\\[f(x) = g(h(x))\\]"}</p>
+          <p>then</p>
+          <p>{"\\[f′(x) = g′(h(x)) \\cdot h′(x)\\]"}</p>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

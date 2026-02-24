@@ -19,20 +19,20 @@ to add new modules/packages:
 
 
 
------------------- example to make an server-side API call
-open workspace: OPENAI-003-responses-api
-
-ChatHistoryPersistence
-  - <a onClick={getChatHistory}>Get saved sessions</a>
-    - const getChatHistory = async (e?: any) => {}
-       - {.. getChatHistoryPersistence ..} = chatMessages() // import {... getChatHistoryPersistence ...} from '@/components/ChatMessageWrapper'
-
-  ChatMessageWrapper
-    - getChatHistoryPersistence: () => Promise<void>
-       - const getChatHistoryPersistence = async () => {}
-          - const data = await sendChatHistoryPersistenceRequest() -> /lib/sendChatHistoryPersistenceRequest.ts
-
 // create flow diagram so it will be easier to remember later
 
 
 D:\_AI.learning.path\_github\OPENAI-003-responses-api
+
+zIl8OhV$9Lw7rf
+
+
+
+Mathematics for Machine Learning and Data Science Specialization
+  course 1: Linear Algebra for Machine Learning and Data Science
+  course 2: Calculus for Machine Learning and Data Science
+  course 3: Probability & Statistics for Machine Learning & Data Science
+
+In notes, add python version to calculate. eg. determinant, etc
+
+

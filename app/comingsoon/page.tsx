@@ -5,12 +5,14 @@ export default function Home() {
       <div className='m-[10px]'>
 
         <div className='jade-h1'>
-          homepage
+          Coming Soon
         </div>
 
+        <div className='jade-h2'>
+          under construction
+        </div>
 
       </div>
-
     </>
   );
 }
