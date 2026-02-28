@@ -57,10 +57,8 @@ export default function MainNav() {
                 <NavDrawer name='Math for Machine Learning'>
 
                     <NavDrawer2 name='Linear algebra'>
-                        <NavDrawerItem href='/mmldss/course1/notation' isFirst={true} >
-                            notation
-                        </NavDrawerItem>
-                        <NavDrawerItem href='/mmldss/course1/week1' isFirst={false} >
+
+                        <NavDrawerItem href='/mmldss/course1/week1' isFirst={true} >
                             systems of linear eq
                         </NavDrawerItem>
 
@@ -87,10 +85,16 @@ export default function MainNav() {
                             week 1
                         </NavDrawerItem>
                         <NavDrawerItem href='/mmldss/course2/week2' isFirst={false} >
-                            week 2
+                            week 2 - part 1
+                        </NavDrawerItem>
+                        <NavDrawerItem href='/mmldss/course2/week2/part2' isFirst={false} >
+                            week 2 - part 2
                         </NavDrawerItem>
                         <NavDrawerItem href='/mmldss/course2/labs' isFirst={false} >
                             labs
+                        </NavDrawerItem>
+                        <NavDrawerItem href='/mmldss/course2/week3' isFirst={false} >
+                            week 3
                         </NavDrawerItem>
 
 

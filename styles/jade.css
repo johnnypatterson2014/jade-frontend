@@ -472,12 +472,13 @@ strong {
 
 .math {
     font-family: 'Segoe UI Semibold';
-    color: var(--color-orange-300);
+    color: var(--color-green-300);
 }
 
 .formula {
     font-family: 'Segoe UI Semibold';
-    color: var(--color-orange-300);
+    color: var(--color-green-300);
+    text-align: center;
 }
 
 mjx-container[jax="CHTML"][display="true"] {
@@ -493,9 +494,13 @@ mjx-container[jax="CHTML"][display="true"] {
     font-family: 'Segoe UI Light';
     font-size: 28px;
     font-weight: 300;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-top: 20px;
     color: var(--color-blue-300);
+}
+
+.page-notes h1.no-top-margin {
+    margin-top: 0px;
 }
 
 .page-notes h2 {
@@ -503,7 +508,31 @@ mjx-container[jax="CHTML"][display="true"] {
     font-size: 16px;
     color: var(--color-blue-300);
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.page-notes h3 {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: var(--color-blue-300);
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.page-notes h4 {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: var(--color-blue-300);
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.page-notes h4>strong {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: var(--color-orange-300);
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 
 .page-notes strong {
@@ -515,4 +544,49 @@ mjx-container[jax="CHTML"][display="true"] {
     list-style-type: disc;
     margin-left: 40px;
     margin-bottom: 15px;
+}
+
+.page-notes ol {
+    list-style-type: decimal;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.page-notes code {
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    background: #f5f5f5;
+    color: #000000;
+    margin: 10px;
+    padding: 5px;
+}
+
+.code-inline {
+
+    color: var(--color-blue-300);
+    padding: 2px;
+    margin-top: 2px;
+    font-family: monospace;
+}
+
+.page-notes pre {
+    display: block;
+    font-family: monospace;
+    unicode-bidi: isolate;
+    white-space: pre;
+    margin-block: 1em 1em;
+    margin-inline: 0px;
+    line-height: 125%;
+}
+
+.jupyter-nb {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid var(--fesk-card-border);
+    border-radius: 10px;
+}
+
+code {
+    font-family: monospace;
 }

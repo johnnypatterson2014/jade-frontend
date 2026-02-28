@@ -37,34 +37,3 @@ e \approx 2.71828182...
 **example 5 output**
 ""\\[\\ln(x)\\]""
 
-
------------------
-
-<p>&quot;[e \approx 2.71828]&quot;</p>
-<p>{"\\[e \\approx 2.71828182...\\]"}</p>
-
-<p>&quot;[\left(1 + \frac{1}{n}\right)^n]&quot;</p>
-{"\\[\\left(1 + \\frac{1}{n}\\right)^n\\]"}
-
-&quot;[y = \ln(x)]&quot;
-{"\\[y = \ln(x)\\]"}
-
-&quot;[e^y = x]&quot;
-
-
---- search and replace
-
-<hr>
-<hr/>
-
-&quot;[
-{"\\[
-
-]&quot;
-\\]"}
-
-&#39;
-′
-
--- replace single \ with \\
-
