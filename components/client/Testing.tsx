@@ -1,6 +1,8 @@
 'use client';
 
 import { getClientContext } from '@/components/client/ClientContext'
+import Image from 'next/image';
+import Button from '@/components/client/Button'
 
 const Testing = () => {
     const { isLoadingAnswer, apiResponse, getApiResponse } = getClientContext()
@@ -14,7 +16,12 @@ const Testing = () => {
 
     return (
         <>
-            <a href='#' onClick={() => getApiResponseAction()}>click me</a>
+            <div className='m-[20px]'>
+                <Button>
+                    <a onClick={() => getApiResponseAction()}>generate graph</a>
+                </Button>
+
+            </div>
 
             {isLoadingAnswer && (
                 <div>Loading...</div>
@@ -22,7 +29,9 @@ const Testing = () => {
             }
 
             {!isLoadingAnswer && apiResponse && apiResponse.length > 0 && (
-                <div>API response is: {apiResponse}</div>
+                <div>
+                    <img src={apiResponse} width={640} alt="" />
+                </div>
             )
             }
         </>

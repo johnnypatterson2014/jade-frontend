@@ -7,10 +7,12 @@ import TileRowCell4 from '@/components/client/TileRowCell4';
 import TileRowCell5 from '@/components/client/TileRowCell5';
 import Tabs from '@/components/client/Tabs';
 import Tab2 from '@/components/client/Tab2';
+import Tab from '@/components/client/Tab';
 import { createMarkup, python_html_1 } from '@/components/config/Constants';
 import { MathJax } from "better-react-mathjax";
 import Button from '@/components/client/Button'
 import Modal from '@/components/client/Modal'
+import Testing from '@/components/client/Testing'
 import React, { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -28,6 +30,10 @@ export default function Home() {
                         }
                 }
                 fetchHtml();
+
+                async function getGraphFromAPI() {
+
+                }
         }, []);
 
         function createMarkup() {
@@ -105,8 +111,30 @@ export default function Home() {
                                                                 added together, their total rate of change is the sum of their individual rates.</p>
 
 
+                                                        <div>
+                                                                <Testing />
+                                                        </div>
+
+
 
                                                 </Tab2>
+
+                                                <Tab title="Labs" isChecked={false}>
+                                                        <TileRowCell0>
+                                                                <div className='jade-code'>
+                                                                        <a href="/C2_W3_Lab_1_Regression_with_Perceptron.html" target="_blank">Lab: C2_W3_Lab_1_Regression_with_Perceptron</a>
+                                                                        <br /><br />
+                                                                        <a href="/C2_W3_Lab_2_Classification_with_Perceptron.html" target="_blank">Lab: C2_W3_Lab_2_Classification_with_Perceptron</a>
+                                                                        <br /><br />
+                                                                        <a href="/C2_W3_Lab_3_Optimization_Using_Newtons_Method.html" target="_blank">Lab: C2_W3_Lab_3_Optimization_Using_Newtons_Method</a>
+                                                                        <br /><br />
+
+                                                                        <a href="/C2_W3_Assignment.html" target="_blank">Assignment: Neural Network with Two Layers</a>
+
+                                                                </div>
+                                                        </TileRowCell0>
+
+                                                </Tab>
 
 
                                         </Tabs>
